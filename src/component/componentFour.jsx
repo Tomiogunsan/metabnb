@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/rotatingImage.svg'
+import image from '../assets/rotatingImage.png'
 
 const componentFour = () => {
   return (

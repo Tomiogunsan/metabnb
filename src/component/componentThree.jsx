@@ -1,12 +1,12 @@
 import React from 'react'
-import imageOne from '../assets/adventure1.svg'
-import imageTwo from '../assets/adventure2.svg'
-import imageThree from '../assets/adventure3.svg'
-import imageFour from '../assets/adventure4.svg'
-import imageFive from '../assets/adventure5.svg'
-import imageSix from '../assets/adventure6.svg'
-import imageSeven from '../assets/adventure7.svg'
-import imageEight from '../assets/adventure8.svg'
+import imageOne from '../assets/adventure1.png'
+import imageTwo from '../assets/adventure2.png'
+import imageThree from '../assets/adventure3.png'
+import imageFour from '../assets/adventure4.png'
+import imageFive from '../assets/adventure5.png'
+import imageSix from '../assets/adventure6.png'
+import imageSeven from '../assets/adventure7.png'
+import imageEight from '../assets/adventure8.png'
 
 
 

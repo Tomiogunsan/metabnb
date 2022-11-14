@@ -1,10 +1,10 @@
 import React from 'react'
-import group from '../assets/Group 4 -in-one.svg'
+import group from '../assets/Group-4-in-1.png'
 
 
 const componentOne = () => {
   return (
-    <div class="grid md:grid-cols-2 gap-4 px-6 py-6">
+    <div class="grid md:grid-cols-2 gap-4 px-6 ">
     <div className='flex flex-col justify-center'>
         <h1 className='text-4xl md:text-5xl'>Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span></h1>
             <p className='text-lg md:text-xl py-4'>we provide you access to luxury and affordable houses in the metaverse, 

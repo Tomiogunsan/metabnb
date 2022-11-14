@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import {Link} from 'react-router-dom'
 import group from '../assets/logo.svg'
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [nav, setNav] = useState(false)
     
 
@@ -13,12 +13,7 @@ const Navbar = () => {
        
     }
 
-    const [showModal, setShowModal] = useState(false)
-
-    const handleModal = () =>{
-      setShowModal(!showModal)
-      console.log('click')
-    }
+    
 
   return (
     //  <div class="container mx-auto px-4">
@@ -29,28 +24,28 @@ const Navbar = () => {
 
       <ul className='hidden md:flex justify-center items-center'>
         
-        <li>Home</li>
-        <li>Place to stay</li>
+        <Link to='/'><li>Home</li></Link>
+       <Link to='/place'><li>Place to stay</li></Link>
         <li>NFTs</li>
         <li>Community</li>
         
         </ul>
 
         <div className=' hidden md:flex '>
-        <button onClick={handleModal} className=' px-[22px] py-[10px] bg-gradient-to-r from-[#A02279] to-[#A02279] text-[#ffffff] rounded-lg'>Connect wallet</button>
+        <button onClick={props.onShowModal} className=' px-[22px] py-[10px] bg-gradient-to-r from-[#A02279] to-[#A02279] text-[#ffffff] rounded-lg'>Connect wallet</button>
        </div>
 
 {/* Hamburger menu */}
       <div onClick={handleNav} className='md:hidden z-10'>
-      {!nav ?  <AiOutlineClose/>:  <HiOutlineMenuAlt4/>} 
+      {nav ?  <AiOutlineClose/>:  <HiOutlineMenuAlt4/>} 
        </div>
 
        {/* mobile menu */}
        <ul onClick={handleNav} className={ !nav ? 'hidden' : 'absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-[#ffffff]'} >
-       <li className='py-4'>Home</li>
-       <li className='py-4'>Place to stay</li>
-       <li className='py-4'>NFTs</li>
-       <li className='py-4'>Community</li>
+       <Link to='/'><li className='py-4'>Home</li></Link>
+       <Link to='/place'><li className='py-4'>Place to stay</li></Link>
+       <li  className='py-4'>NFTs</li>
+       <li  className='py-4'>Community</li>
        <li className='py-4'>
        <button className=' px-[22px] py-[10px] bg-gradient-to-r from-[#A02279] to-[#A02279] text-[#ffffff] rounded-lg'>Connect wallet</button>
        </li>
